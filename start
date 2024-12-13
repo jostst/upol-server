@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Initialize pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# Activate the virtual environment
+pyenv activate upol
+
+# Navigate to the directory containing server.py, if not current directory
+cd .
+
+# Run the Python server
+python main.py
+
+# Optionally, deactivate the environment when done
+pyenv deactivate

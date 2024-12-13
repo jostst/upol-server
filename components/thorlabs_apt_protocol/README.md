@@ -1,0 +1,1 @@
+The implementation of Thorlabs APT protocol, available at [https://www.thorlabs.com/Software/Motion%20Control/APT_Communications_Protocol.pdf] was adapted from the original source by Kyle Sunden (yaq), available at [https://gitlab.com/yaq/thorlabs-apt-protocol/-/tree/main?ref_type=heads] (13. December 2024). Original license for the component attached in this directory.
